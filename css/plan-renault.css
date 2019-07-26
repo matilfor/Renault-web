@@ -1,17 +1,35 @@
+body{
+	margin-top: 115px;
+}
+
 h3{
-	font-size: 2.37em;
+	font-size: 2.37rem;
 }
 
 p{
-	font-size: 1.31em;
+	font-size: 1.31rem;
 }
 
-.descripcion{
+.descripcion-desktop{
 	font-family: 'Open Sans', sans-serif;
-	font-size: 1.25em;
-	line-height: 1.6em;
+	font-size: 1.25rem;
+	line-height: 1.6rem;
 	color: #5a5a5a;
-	margin-top: 1.2em;
+	margin-top: 1.2rem;
+}
+
+.descripcion-mobile{
+	font-family: 'Muli', sans-serif;
+	font-size: 1rem;
+	line-height: 1.6rem;
+	color: rgba(0,0,0,.7);
+	margin-top: 1.2rem;
+}
+
+.separador{
+	border-bottom-color: #35c4ff;
+	border-bottom-style: dotted;
+	border-bottom-width: 1px;
 }
 
 .collapse.navbar-collapse .navbar-nav.ml-auto > li > a:hover {
@@ -20,8 +38,8 @@ p{
 
 .navbar{
 	font-family: 'Open Sans', sans-serif;
-  	font-size: 1.25em;
-  	line-height: 1.6em;
+  	font-size: 1.25rem;
+  	line-height: 1.6rem;
   	border-top: 5px solid #d2d62a;
   	padding: 0px;
 }
@@ -57,7 +75,7 @@ p{
 	background: rgba(0,0,0,.2);
 	max-width: 40%;
 	padding: 5%;
-	line-height: 0.87em;
+	line-height: 0.87rem;
 	text-align: left;
 	color: #fff;
 	font-family: 'Dosis', sans-serif;
@@ -68,21 +86,29 @@ p{
 	max-height: 100px; 
 	width: 250px; 
 	height: 100px;
-	margin-left: 1em;
+	margin-left: 1rem;
 }
 
 .form-title{
-	font-size: 2.37em;
+	font-size: 2.37rem;
 	font-family: 'Dosis', sans-serif;
 	color: #5a5a5a;
 }
 
 .form-desc{
-	font-size: 1.31em;
+	font-size: 1.31rem;
 	font-family: 'Dosis', sans-serif;
 	color: #5a5a5a;
 }
 
 footer{
-	padding: 1.6em;
+	padding: 1.6rem;
+}
+
+#back-to-top {
+	position: fixed;
+	bottom: 25px;
+	right: 25px;
+	display: none;
+	border-color: black;
 }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -10,152 +11,192 @@
   <link rel="canonical" href="https://www.plan-renault.com.ar/">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"> 
   <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/plan-renault.css" rel="stylesheet">
 </head>
 
 <body>
-  <header>
-    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="index.html" aria-label="Plan Renault - Financiación de Fábrica, Sin Interés y en Pesos"><img class="logo" src="img/planrenault-header.png" alt="Volver a la página principal"></a>
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Plan Renault
-            </a>
-            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-              <a class="dropdown-item" href="kwid.html">Kwid</a>
-              <a class="dropdown-item" href="logan.html">Logan</a>
-              <a class="dropdown-item" href="kangoo.html">Kangoo</a>
-              <a class="dropdown-item" href="sandero.html">Sandero</a>
-              <a class="dropdown-item" href="stepway.html">Sandero Stepway</a>
-              <a class="dropdown-item" href="stepway.html">Duster</a>
-              <a class="dropdown-item" href="stepway.html">Oroch</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">¿Qué es Plan Renault?</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="yatenes.html">¿Ya tenés un plan?</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contacto</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner" role="listbox">
-        <div class="carousel-item active" style="background-image:url(img/kwid-header.jpg)">
-          <div class="carousel-caption d-none d-md-block">
-            <h3>Renault Kwid</h3>
-            <p>El SUV de los compactos.</p>
-            <button class="btn btn-warning btn-lg">+ Info</button>
+<!--menu de navegacion-->    
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="index.html" aria-label="Plan Renault - Financiación de Fábrica, Sin Interés y en Pesos"><img class="logo" src="img/desktop/planrenault-header.png" alt="Volver a la página principal"></a>
+  <!--menu responsive-->     
+    <button class="navbar-toggler navbar-toggler-left" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+  <!--fin menu responsive-->   
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Plan Renault
+          </a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
+            <a class="dropdown-item" href="kwid.html">Kwid</a>
+            <a class="dropdown-item" href="logan.html">Logan</a>
+            <a class="dropdown-item" href="kangoo.html">Kangoo</a>
+            <a class="dropdown-item" href="sandero.html">Sandero</a>
+            <a class="dropdown-item" href="stepway.html">Sandero Stepway</a>
+            <a class="dropdown-item" href="stepway.html">Duster</a>
+            <a class="dropdown-item" href="stepway.html">Oroch</a>
           </div>
-        </div>
-        <div class="carousel-item" style="background-image:url(img/kangoo-header.jpg)">
-          <div class="carousel-caption d-none d-md-block">
-            <h3>Renault Kangoo</h3>
-            <p>Un automóvil, utilitario, familiar.</p>
-            <button class="btn btn-warning btn-lg">+ Info</button>
-          </div>
-        </div>
-        <div class="carousel-item" style="background-image:url(img/oroch-header.jpg)">
-          <div class="carousel-caption d-none d-md-block">
-            <h3>Renault Oroch</h3>
-            <p>Una pickup diferente a todo lo que ya viste.</p>
-            <button class="btn btn-warning btn-lg">+ Info</button>
-          </div>
-        </div>
-        <div class="carousel-item" style="background-image:url(img/sandero-header.jpg)">
-          <div class="carousel-caption d-none d-md-block">
-            <h3>Renault Sandero Stepway</h3>
-            <p>Viví el momento donde quiera que estés.</p>
-            <button class="btn btn-warning btn-lg">+ Info</button>
-          </div>
-        </div>
-      </div>
-      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div>  
-  <div class="container">
-    <div class="col-lg-12">
-      <p class="descripcion"><strong>Renault</strong> te la posibilidad de acceder, mediante el pago de cuotas mensuales en pesos, y de bajo monto, sin anticipos ni requisitos de ingresos, a los vehículos de la amplia gama de modelos que <strong>Renault</strong> pensó para vos, facilitándote el acceso al mismo, prestándote una alta calidad de servicio y atención.</p>
-      <p class="descripcion">Financiá con <strong>Renault</strong> porque es ideal para acceder a tu 0km cubriendo mínimas cuotas sin interés, rentables y seguras, con <strong>entrega por fábrica a partir de la cuota 2 y múltiples beneficios.</strong></p>
-      <img class="mx-auto p-2 d-block img-fluid" src="img/promo-banner.jpg">
-      <img class="mx-auto p-2 d-block img-fluid" src="img/kwid-banner.jpg">
-      <img class="mx-auto p-2 d-block img-fluid" src="img/logan-banner.jpg">
-      <img class="mx-auto p-2 d-block img-fluid" src="img/kangoo-banner.jpg">
-      <img class="mx-auto p-2 d-block img-fluid" src="img/oroch-banner.jpg">
-      <img class="mx-auto p-2 d-block img-fluid" src="img/duster-banner.jpg">
-      <img class="mx-auto p-2 d-block img-fluid" src="img/sandero-banner.jpg">
-      <img class="mx-auto p-2 d-block img-fluid" src="img/stepway-banner.jpg">
-      <h3 class="form-title">Consultar con un Asesor Oficial Renault</h3>
-      <p class="form-desc">Complete el siguiente formulario y un asesor Renault se contactará con usted para brindarle más información</p>
-      <form>
-        <div class="form-group">
-          <label>Nombre</label>
-          <input type="text" class="form-control" id="nombre" required>
-        </div>
-        <div class="form-group">
-          <label>Localidad</label>  
-            <select class="custom-select">
-              <option selected>Elija su localidad</option>
-              <option value="1">Capital Federal</option>
-              <option value="2">GBA Zona Norte</option>
-              <option value="3">GBA Zona Oeste</option>
-              <option value="4">GBA Zona Sur</option>
-              <option value="5">Buenos Aires/Costa Atlántica</option>
-            </select>
-         </div>   
-        <div class="form-group">
-          <label>Teléfono (Cód. de área + tel.)</label>
-          <input type="tel" class="form-control" id="tel" required>
-        </div>
-        <div class="form-group">
-          <label>Dirección de mail</label>
-          <input type="email" class="form-control" id="email">
-        </div>
-        <div class="form-group">
-          <label>¿Qué modelo de Renault le interesa?</label>
-          <select class="custom-select">
-            <option selected>Elija un modelo</option>
-            <option value="1">Kwid</option>
-            <option value="2">Oroch</option>
-            <option value="5">Duster</option>
-            <option value="5">Kangoo</option>
-            <option value="5">Logan</option>
-            <option value="3">Sandero</option>
-            <option value="4">Sandero Stepway</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <button type="submit" class="btn btn-dark" id="enviar">Enviar</button>
-        </div>
-      </form>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">¿Qué es Plan Renault?</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="yatenes.html">¿Ya tenés un plan?</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contacto</a>
+        </li>
+      </ul>
     </div>
+  </nav>
+<!--carousel-->
+<header class="d-none d-lg-block">
+<div class="container-fluid">
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+      <div class="carousel-item active" style="background-image:url(img/desktop/kwid-header.jpg)">
+        <div class="carousel-caption d-none d-md-block">
+          <h3>Renault Kwid</h3>
+          <p>El SUV de los compactos.</p>
+          <button class="btn btn-warning btn-lg">+ Info</button>
+        </div>
+      </div>
+      <div class="carousel-item" style="background-image:url(img/desktop/kangoo-header.jpg)">
+        <div class="carousel-caption d-none d-md-block">
+          <h3>Renault Kangoo</h3>
+          <p>Un automóvil, utilitario, familiar.</p>
+          <button class="btn btn-warning btn-lg">+ Info</button>
+        </div>
+      </div>
+      <div class="carousel-item" style="background-image:url(img/desktop/oroch-header.jpg)">
+        <div class="carousel-caption d-none d-md-block">
+          <h3>Renault Oroch</h3>
+          <p>Una pickup diferente a todo lo que ya viste.</p>
+          <button class="btn btn-warning btn-lg">+ Info</button>
+        </div>
+      </div>
+      <div class="carousel-item" style="background-image:url(img/desktop/sandero-header.jpg)">
+        <div class="carousel-caption d-none d-md-block">
+          <h3>Renault Sandero Stepway</h3>
+          <p>Viví el momento donde quiera que estés.</p>
+          <button class="btn btn-warning btn-lg">+ Info</button>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
   </div>
+ </div> 
+ </header>
+<!--descripcion desktop--> 
+  <div class="container d-none d-lg-block">
+    <p class="descripcion-desktop"><strong>Renault</strong> te la posibilidad de acceder, mediante el pago de cuotas mensuales en pesos, y de bajo monto, sin anticipos ni requisitos de ingresos, a los vehículos de la amplia gama de modelos que <strong>Renault</strong> pensó para vos, facilitándote el acceso al mismo, prestándote una alta calidad de servicio y atención.</p>
+    <p class="descripcion">Financiá con <strong>Renault</strong> porque es ideal para acceder a tu 0km cubriendo mínimas cuotas sin interés, rentables y seguras, con <strong>entrega por fábrica a partir de la cuota 2 y múltiples beneficios.</strong></p>
+    <img class="mx-auto p-2 d-block img-fluid" src="img/desktop/promo-banner.jpg">
+    <img class="mx-auto p-2 d-block img-fluid" src="img/desktop/kwid-banner.jpg">
+    <img class="mx-auto p-2 d-block img-fluid" src="img/desktop/logan-banner.jpg">
+    <img class="mx-auto p-2 d-block img-fluid" src="img/desktop/kangoo-banner.jpg">
+    <img class="mx-auto p-2 d-block img-fluid" src="img/desktop/oroch-banner.jpg">
+    <img class="mx-auto p-2 d-block img-fluid" src="img/desktop/duster-banner.jpg">
+    <img class="mx-auto p-2 d-block img-fluid" src="img/desktop/sandero-banner.jpg">
+    <img class="mx-auto p-2 d-block img-fluid" src="img/desktop/stepway-banner.jpg">
+  </div>
+<!--descripcion responsive--> 
+  <div class="container .d-none .d-lg-block .d-xl-none">
+    <p class="descripcion-mobile"><strong>Plan Renault</strong> te permite acceder a tu <strong>Renault 0 KM</strong>. Totalmente en cuotas sin interés, y además te brinda muchísimas ventajas para hacerte todo mucho más fácil.</p>
+    <p class="separador"><img class="mx-auto p-2 d-block img-fluid" alt="Promoción Plan Renault" src="img/mobile/promo-banner-mobile.jpg"></p>
+    <p class="separador"><img class="mx-auto p-2 d-block img-fluid" src="img/mobile/kwid-banner-mobile.jpg"></p>
+    <p class="separador"><img class="mx-auto p-2 d-block img-fluid" src="img/mobile/logan-banner-mobile.jpg"></p>
+    <p class="separador"><img class="mx-auto p-2 d-block img-fluid" src="img/mobile/kangoo-banner-mobile.jpg"></p>
+    <p class="separador"><img class="mx-auto p-2 d-block img-fluid" src="img/mobile/oroch-banner-mobile.jpg"></p>
+    <p class="separador"><img class="mx-auto p-2 d-block img-fluid" src="img/mobile/duster-banner-mobile.jpg"></p>
+    <p class="separador"><img class="mx-auto p-2 d-block img-fluid" src="img/mobile/sandero-banner-mobile.jpg"></p>
+    <p class="separador"><img class="mx-auto p-2 d-block img-fluid" src="img/mobile/stepway-banner-mobile.jpg"></p>
+  </div>
+<!--formulario-->
+  <div class="container">
+    <h3 class="form-title">Consultar con un Asesor Oficial Renault</h3>
+    <p class="form-desc">Complete el siguiente formulario y un asesor Renault se contactará con usted para brindarle más información</p>      
+    <form>
+      <div class="form-group">
+        <label>Nombre</label>
+        <input type="text" class="form-control" id="nombre" required>
+      </div>
+      <div class="form-group">
+        <label>Localidad</label>  
+          <select class="custom-select">
+            <option selected>Elija su localidad</option>
+            <option value="1">Capital Federal</option>
+            <option value="2">GBA Zona Norte</option>
+            <option value="3">GBA Zona Oeste</option>
+            <option value="4">GBA Zona Sur</option>
+            <option value="5">Buenos Aires/Costa Atlántica</option>
+          </select>
+       </div>   
+      <div class="form-group">
+        <label>Teléfono (Cód. de área + tel.)</label>
+        <input type="tel" class="form-control" id="tel" required>
+      </div>
+      <div class="form-group">
+        <label>Dirección de mail</label>
+        <input type="email" class="form-control" id="email">
+      </div>
+      <div class="form-group">
+        <label>¿Qué modelo de Renault le interesa?</label>
+        <select class="custom-select">
+          <option selected>Elija un modelo</option>
+          <option value="1">Kwid</option>
+          <option value="2">Oroch</option>
+          <option value="5">Duster</option>
+          <option value="5">Kangoo</option>
+          <option value="5">Logan</option>
+          <option value="3">Sandero</option>
+          <option value="4">Sandero Stepway</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <button type="submit" class="btn btn-dark" id="enviar">Enviar</button>
+      </div>
+    </form>
+  </div>
+<!--fin formulario-->    
+<!--banner del footer--> 
   <footer>
-    <img class="m-auto d-block img-fluid" src="img/consultas-banner.jpg">
+    <img class="m-auto d-block img-fluid" src="img/desktop/consultas-banner.jpg">
   </footer>
-
+  <a id="back-to-top" href="#" class="btn btn-primary-outline btn-lg back-to-top" role="button">&#8593;</a>
+<!--scripts-->
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
-  <script type="text/javascript"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $(window).scroll(function () {
+        if ($(this).scrollTop() > 50) {
+          $('#back-to-top').fadeIn();
+        } else {
+          $('#back-to-top').fadeOut();
+      }
+    });
+      $('#back-to-top').click(function () {
+        $('body,html').animate({
+          scrollTop: 0
+        }, 400);
+        return false;
+      });
+      });
+  </script>
 </body>
 </html>
