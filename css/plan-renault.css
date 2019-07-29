@@ -76,7 +76,7 @@ p{
 }
 
 .thumb:hover{
-	width: 400px;
+	width: 200px;
 }
 
 .carousel .carousel-inner {
@@ -142,4 +142,8 @@ footer{
 	right: 25px;
 	display: none;
 	border-color: black;
+}
+
+.modal-content {
+height: 100%;
 }
