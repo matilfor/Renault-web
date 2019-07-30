@@ -145,6 +145,11 @@ p{
 	border-radius: 6px;
 }
 
+.img-plan{
+	float: left;
+	margin-right: 20px;
+}
+
 .logo{
 	max-width: 250px; 
 	max-height: 100px; 
