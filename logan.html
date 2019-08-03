@@ -11,7 +11,7 @@
   <link rel="canonical" href="https://www.plan-renault.com.ar/">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet"> 
   <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet"> 
-  <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/plan-renault.css" rel="stylesheet">
 </head>
@@ -19,7 +19,7 @@
 <body>
 <!--menu de navegacion-->    
   <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="index.html" aria-label="Plan Renault - Financiación de Fábrica, Sin Interés y en Pesos"><img class="logo" src="img/desktop/planrenault-header.png" alt="Volver a la página principal"></a>
+    <a class="navbar-brand" href="index.html" aria-label="Plan Renault - Financiación de Fábrica, Sin Interés y en Pesos"><img class="logo" src="img/logo-renault.png" alt="Volver a la página principal"></a>
   <!--menu responsive-->     
     <button class="navbar-toggler navbar-toggler-left" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
   <!--fin menu responsive-->   
@@ -62,38 +62,40 @@
     <img src="img/logan/logan-1.jpg" class="img-fluid" alt="renault logan">
     <div class="row">
       <div class="col p-0">
-        <a href="#" class="d-block my-4 h-100">
-          <img class="img-fluid thumb" src="img/logan/logan-2.jpg" alt="renault logan">
-        </a>
+        <a class="thumbnail d-block my-4 h-100" href="#" data-image-id="" data-toggle="modal" data-image="img/logan/logan-2.jpg" data-target="#image-gallery"><img class="img-fluid thumb" src="img/logan/logan-2.jpg"alt="renault logan"></a>
       </div>
       <div class="col p-0">
-        <a href="#" class="d-block my-4 h-100">
-          <img class="img-fluid thumb" src="img/logan/logan-3.jpg" alt="renault logan">
-        </a>
+        <a class="thumbnail d-block my-4 h-100" href="#" data-image-id="" data-toggle="modal" data-image="img/logan/logan-3.jpg" data-target="#image-gallery"><img class="img-fluid thumb" src="img/logan/logan-3.jpg"
+          alt="renault logan"></a>
       </div>
       <div class="col p-0">
-        <a href="#" class="d-block my-4 h-100">
-          <img class="img-fluid thumb" src="img/logan/logan-4.jpg" alt="renault logan">
-        </a>
+        <a class="thumbnail d-block my-4 h-100" href="#" data-image-id="" data-toggle="modal" data-image="img/logan/logan-4.jpg" data-target="#image-gallery"><img class="img-fluid thumb" src="img/logan/logan-4.jpg" alt="renault logan"></a>
       </div>
       <div class="col p-0">
-        <a href="#" class="d-block my-4 h-100">
-          <img class="img-fluid thumb" src="img/logan/logan-5.jpg" alt="renault logan">
-        </a>
+        <a class="thumbnail d-block my-4 h-100" href="#" data-image-id="" data-toggle="modal" data-image="img/logan/logan-5.jpg" data-target="#image-gallery"><img class="img-fluid thumb" src="img/logan/logan-5.jpg"
+        alt="Another alt text"></a>
       </div>
       <div class="col p-0">
-        <a href="#" class="d-block my-4 h-100">
-          <img class="img-fluid thumb" src="img/logan/logan-6.jpg" alt="renault logan">
-        </a>
+        <a class="thumbnail d-block my-4 h-100" href="#" data-image-id="" data-toggle="modal" data-image="img/logan/logan-6.jpg" data-target="#image-gallery"><img class="img-fluid thumb" src="img/logan/logan-6.jpg"
+        alt="renault logan"></a>
       </div>
-    </div> 
-  </div> 
-<!--pop-ups imágenes galería-->
-<div id="modal" class="modal fade" tabindex="-1" role="dialog">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <img src="" class="img-responsive" id="show-img"> 
+<!-- pop ups con imágenes grandes -->    
+  <div class="modal fade" id="image-gallery" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="modal-body">
+            <img id="image-gallery-image" class="img-responsive col-md-12" src="">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary float-left" id="show-previous-image"><i class="fas fa-arrow-left"></i></button>
+          <button type="button" id="show-next-image" class="btn btn-secondary float-right"><i class="fas fa-arrow-right"></i></button>
+        </div>
+      </div>
     </div>
+  </div>
   </div>
 </div>  
 <!--descripcion-->
@@ -160,7 +162,7 @@
   <footer>
     <img class="m-auto d-block img-fluid" src="img/mobile/promo-banner-mobile.jpg">
   </footer>
-  <a id="back-to-top" href="#" class="btn btn-primary-outline btn-lg back-to-top" role="button">&#8593;</a>
+  <a id="back-to-top" href="#" class="btn btn-primary-outline btn-lg back-to-top" role="button"><i class="fas fa-arrow-up"></i></a>
 <!--scripts-->
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>

@@ -28,6 +28,10 @@ p{
 	color: #5a5a5a;
 }
 
+footer{
+	padding: 1.6rem;
+}
+
 .navbar{
 	font-family: 'Open Sans', sans-serif;
 	font-size: 1.25rem;
@@ -35,6 +39,14 @@ p{
 	border-top: 5px solid #d2d62a;
 	padding: 0px;
 	color: #777;
+}
+
+.logo{
+	max-width: 250px; 
+	max-height: 100px; 
+	height: auto; 
+  width: auto; 
+	margin-left: 1rem;
 }
 
 .dropdown-item{
@@ -135,7 +147,6 @@ p{
 	text-shadow: 0 1px 1px rgba(0,0,0,.4);
 }
 
-
 .btn.btn-warning.btn-lg{
 	background-color: #d2d62a;
 	color: #fff;
@@ -150,14 +161,6 @@ p{
 	margin-right: 20px;
 }
 
-.logo{
-	max-width: 250px; 
-	max-height: 100px; 
-	width: 250px; 
-	height: 100px;
-	margin-left: 1rem;
-}
-
 .form-title{
 	font-size: 2.37rem;
 	font-family: 'Dosis', sans-serif;
@@ -170,10 +173,6 @@ p{
 	color: #5a5a5a;
 }
 
-footer{
-	padding: 1.6rem;
-}
-
 #back-to-top {
 	position: fixed;
 	bottom: 25px;
@@ -184,4 +183,10 @@ footer{
 
 .modal-content {
 height: 100%;
+}
+
+@media only screen and (max-width : 768px){
+	.logo{
+		height: 70px;
+	}
 }
