@@ -52,13 +52,13 @@
     </div>
   </nav>
 <!--carousel-->
-<header class="d-none d-lg-block">
-<div class="container-fluid">
+<header class="d-none d-lg-block container-fluid">
   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
       <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
       <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
       <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
     </ol>
     <div class="carousel-inner" role="listbox">
       <div class="carousel-item active" style="background-image:url(img/desktop/kwid-header.jpg)">
@@ -99,7 +99,6 @@
       <span class="sr-only">Next</span>
     </a>
   </div>
- </div> 
  </header>
 <!--descripcion desktop--> 
   <div class="container d-none d-lg-block">
@@ -128,16 +127,17 @@
   </div>
 <!--formulario-->
   <div class="container" id="contacto">
-    <h3 class="form-title">Consultar con un Asesor Oficial Renault</h3>
-    <p class="form-desc">Complete el siguiente formulario y un asesor Renault se contactará con usted para brindarle más información</p>      
-    <form>
+    <h1>Consultar con un Asesor Oficial Renault</h1>
+    <p>Complete el siguiente formulario y un asesor Renault se contactará con usted para brindarle más información</p>      
+    <form class="needs-validation col-sm-10 d-block" novalidate>
       <div class="form-group">
-        <label>Nombre</label>
-        <input type="text" class="form-control" id="nombre" required>
+        <label for="validationCustomUsername">Nombre*</label>
+        <input type="text" class="form-control col-md-6 mb-3" id="validationCustomUsername" required>
+        <div class="invalid-feedback">Por favor ingrese su nombre.</div>
       </div>
       <div class="form-group">
-        <label>Localidad</label>  
-          <select class="custom-select">
+        <label class="d-block">Localidad</label>  
+          <select class="custom-select col-md-4 mb-3">
             <option selected>Elija su localidad</option>
             <option value="1">Capital Federal</option>
             <option value="2">GBA Zona Norte</option>
@@ -147,16 +147,17 @@
           </select>
        </div>   
       <div class="form-group">
-        <label>Teléfono (Cód. de área + tel.)</label>
-        <input type="tel" class="form-control" id="tel" required>
+        <label for="validationCustomTel">Teléfono (Cód. de área + tel.)*</label>
+        <input type="tel" class="form-control col-md-6 mb-3" id="validationCustomTel" required>
+        <div class="invalid-feedback">Por favor ingrese su teléfono.</div>
       </div>
       <div class="form-group">
         <label>Dirección de mail</label>
-        <input type="email" class="form-control" id="email">
+        <input type="email" class="form-control col-md-6 mb-3" id="email">
       </div>
       <div class="form-group">
-        <label>¿Qué modelo de Renault le interesa?</label>
-        <select class="custom-select">
+        <label class="d-block">¿Qué modelo de Renault le interesa?</label>
+        <select class="custom-select col-md-4 mb-3">
           <option selected>Elija un modelo</option>
           <option value="1">Kwid</option>
           <option value="2">Oroch</option>
@@ -177,7 +178,7 @@
   <footer>
     <img class="m-auto d-block img-fluid" src="img/desktop/consultas-banner.jpg">
   </footer>
-  <a id="back-to-top" href="#" class="btn btn-primary-outline btn-lg back-to-top" role="button"><i class="fas fa-arrow-up"></a>
+  <a id="back-to-top" href="#" class="btn btn-light btn-lg back-to-top" role="button"><i class="fas fa-arrow-up"></a>
 <!--scripts-->
   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>

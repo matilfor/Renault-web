@@ -1,30 +1,17 @@
+/*hoja de estilos*/
+
+/*elementos generales de la página*/
+html { 
+	font-size: 1rem; 
+}
+
 body{
 	margin-top: 115px;
 }
 
-h1{
-	font-size: 2.37rem;
-	font-family: 'Dosis', sans-serif;
-	color: #5a5a5a;
-}
-
-
-h2{
-	font-size: 2rem;
-	font-family: 'Dosis', sans-serif;
-	color: #5a5a5a;
-}
-
-h3{
-	font-size: 1.5rem;
-	font-family: 'Dosis', sans-serif;
-	color: #5a5a5a;
-}
-
-p{
-	font-size: 1.25rem;
-	line-height: 1.8rem;
+label{
 	font-family: 'Open Sans', sans-serif;
+	font-size: 1rem;
 	color: #5a5a5a;
 }
 
@@ -32,9 +19,10 @@ footer{
 	padding: 1.6rem;
 }
 
+/*barra de navegación*/
 .navbar{
 	font-family: 'Open Sans', sans-serif;
-	font-size: 1.25rem;
+	font-size: 1.1rem;
 	line-height: 1.6rem;
 	border-top: 5px solid #d2d62a;
 	padding: 0px;
@@ -51,7 +39,7 @@ footer{
 
 .dropdown-item{
 	font-family: 'Open Sans', sans-serif;
-	font-size: 1.25rem;
+	font-size: 1.1rem;
 	color: #777;
 }
 
@@ -63,59 +51,15 @@ footer{
 	color: #d2d62a;
 }
 
-.detalles-modelos{
-	font-family: 'Open Sans', sans-serif;
-	font-size: 1.25rem;
-	line-height: 1.6rem;
-	font-weight: bold;
-	color: #5a5a5a;
-}
-
-.descripcion-desktop{
-	font-family: 'Open Sans', sans-serif;
-	font-size: 1.25rem;
-	line-height: 1.6rem;
-	color: #5a5a5a;
-	margin-top: 1.2rem;
-}
-
-.descripcion-mobile{
-	font-family: 'Open Sans', sans-serif;
-	font-size: 1rem;
-	line-height: 1.6rem;
-	color: rgba(0,0,0,.7);
-	margin-top: 1.2rem;
-}
-
-.separador{
-	border-bottom-color: #35c4ff;
-	border-bottom-style: dotted;
-	border-bottom-width: 1px;
-}
-
-.thumb{
-	box-shadow: 0 0 10px rgba(0,0,0,.2);
-	border: 2px solid #cfcfcf;
-}
-
-.thumb{
-	-webkit-transition: all 3s ease;
-  -moz-transition: all 3s ease;
-  -o-transition: all 3s ease;
-  transition: all 3s ease;
-}
-
-.thumb:hover{
-	width: 200px;
-}
-
+/*slider del index*/
 .carousel .carousel-inner {
-  height: 100vh;
+  height: 80vh;
+  min-height: 350px;
 }
 
 .carousel-item{
-  max-height: 100vh;
-  min-height: 100vh;
+  max-height: 80vh;
+  min-height: 80vh;
   max-width: 100vw;
   background-size: cover;
   background-position: center center;
@@ -156,23 +100,58 @@ footer{
 	border-radius: 6px;
 }
 
+/*página detalle de cada auto*/
+.detalles-modelos{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1rem;
+	font-weight: bold;
+	color: #5a5a5a;
+}
+
+/*barra celeste que separa cada banner de autos en el index*/
+.separador{
+	border-bottom-color: #35c4ff;
+	border-bottom-style: dotted;
+	border-bottom-width: 1px;
+}
+
+/*thumbnails de las imágenes de cada auto*/
+.thumb{
+	box-shadow: 0 0 10px rgba(0,0,0,.2);
+	border: 2px solid #cfcfcf;
+	-webkit-transition: all 3s ease;
+	-moz-transition: all 3s ease;
+	-o-transition: all 3s ease;
+	transition: all 3s ease;
+}
+
+.thumb:hover{
+	width: 200px;
+}
+
+/*pop ups de imágenes de autos*/
+.modal-content {
+	height: 100%;
+}
+
+/*logos del about*/
 .img-plan{
 	float: left;
 	margin-right: 20px;
 }
 
-.form-title{
-	font-size: 2.37rem;
-	font-family: 'Dosis', sans-serif;
-	color: #5a5a5a;
+/*formularios*/
+.form-control:focus {
+  border-color: #d2d62a;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px rgba(210, 214, 42, 0.5);
 }
 
-.form-desc{
-	font-size: 1.31rem;
-	font-family: 'Dosis', sans-serif;
-	color: #5a5a5a;
+.custom-select:focus {
+  border-color: #d2d62a;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px rgba(210, 214, 42, 0.5);
 }
 
+/*botón para volver arriba*/
 #back-to-top {
 	position: fixed;
 	bottom: 25px;
@@ -181,12 +160,71 @@ footer{
 	border-color: black;
 }
 
-.modal-content {
-height: 100%;
-}
-
+/*estilos variados según tamaños de pantallas*/
 @media only screen and (max-width : 768px){
+
 	.logo{
 		height: 70px;
+	}
+}
+
+@media (min-width: 375px) {
+
+	.descripcion-mobile{
+		font-family: 'Open Sans', sans-serif;
+		font-size: 1rem;
+		color: rgba(0,0,0,.7);
+		margin-top: 1.2rem;
+	}
+
+	p{
+		font-size: 1rem;
+		font-family: 'Open Sans', sans-serif;
+		color: #5a5a5a;
+	}
+
+	h1{
+		font-size: 1.3rem;
+		font-family: 'Open Sans', sans-serif;
+		color: #5a5a5a;
+	}
+
+	h2{
+		font-size: 1.2rem;
+		font-family: 'Open Sans', sans-serif;
+		color: #5a5a5a;
+	}
+
+}
+
+@media (min-width: 992px) {
+
+  html { 
+  	font-size: 1.25rem; 
+  }
+
+  h1{
+		font-size: 1.5rem;
+		font-family: 'Open Sans', sans-serif;
+		color: #5a5a5a;
+	}
+
+	h2{
+		font-size: 1.4rem;
+		font-family: 'Open Sans', sans-serif;
+		color: #5a5a5a;
+	}
+
+	p{
+		font-size: 1.1rem;
+		font-family: 'Open Sans', sans-serif;
+		color: #5a5a5a;
+	}
+
+	.descripcion-desktop{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.1rem;
+	color: #5a5a5a;
+	margin-top: 1.2rem;
 	}
 }
