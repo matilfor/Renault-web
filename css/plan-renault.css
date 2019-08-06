@@ -140,6 +140,11 @@ footer{
 	margin-right: 20px;
 }
 
+/*párrafo "consulte" del about*/
+.consulte{
+	font-size: 0.9rem;
+}
+
 /*formularios*/
 .form-control:focus {
   border-color: #d2d62a;
@@ -168,7 +173,7 @@ footer{
 	}
 }
 
-@media (min-width: 375px) {
+@media only screen and (min-width: 320px) {
 
 	.descripcion-mobile{
 		font-family: 'Open Sans', sans-serif;
@@ -197,7 +202,7 @@ footer{
 
 }
 
-@media (min-width: 992px) {
+@media only screen and (min-width: 992px) {
 
   html { 
   	font-size: 1.25rem; 
