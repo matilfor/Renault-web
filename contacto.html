@@ -67,45 +67,69 @@
   </div>
 <!--formulario-->
   <div class="container" id="contacto">    
-    <form>
+    <form name="contact-about" method="POST" data-netlify="true">
       <div class="form-group">
         <label>Nombre</label>
-        <input type="text" class="form-control" id="nombre" required>
+        <input type="text" class="form-control" name="nombre" required>
       </div>
       <div class="form-group">
         <label>Localidad</label>  
-          <select class="custom-select">
+          <select class="custom-select" name="localidad[]" multiple>
             <option selected>Elija su localidad</option>
-            <option value="1">Capital Federal</option>
-            <option value="2">GBA Zona Norte</option>
-            <option value="3">GBA Zona Oeste</option>
-            <option value="4">GBA Zona Sur</option>
-            <option value="5">Buenos Aires/Costa Atlántica</option>
+            <option value="CABA">Capital Federal</option>
+            <option value="GBA Norte">GBA Zona Norte</option>
+            <option value="GBA Oeste">GBA Zona Oeste</option>
+            <option value="GBA Sur">GBA Zona Sur</option>
+            <option value="Buenos Aires Costa Atlantica">Buenos Aires/Costa Atlántica</option>
+            <option value="Buenos Aires Interior">Buenos Aires/Interior</option>
+            <option value="Buenos Aires">Buenos Aires</option>
+            <option value="Catamarca">Catamarca</option>
+            <option value="Chaco">Chaco</option>
+            <option value="Chubut">Chubut</option>
+            <option value="Cordoba">Córdoba</option>
+            <option value="Corrientes">Corrientes</option>
+            <option value="Entre Rios">Entre Ríos</option>
+            <option value="Formosa">Formosa</option>
+            <option value="Jujuy">Jujuy</option>
+            <option value="La Pampa">La Pampa</option>
+            <option value="La Rioja">La Rioja</option>
+            <option value="Mendoza">Mendoza</option>
+            <option value="Misiones">Misiones</option>
+            <option value="Neuquen">Neuquén</option>
+            <option value="Rio Negro">Río Negro</option>
+            <option value="Salta">Salta</option>
+            <option value="San Juan">San Juan</option>
+            <option value="San Luis">San Luis</option>
+            <option value="Santa Cruz">Santa Cruz</option>
+            <option value="Santa Fe">Santa Fe</option>
+            <option value="Sgo del Estero">Sgo del Estero</option>
+            <option value="Tierra del Fuego">Tierra del Fuego</option>
+            <option value="Tucuman">Tucumán</option>
           </select>
        </div>   
       <div class="form-group">
         <label>Teléfono (Cód. de área + tel.)</label>
-        <input type="tel" class="form-control" id="tel" required>
+        <input type="tel" class="form-control" name="tel" required>
       </div>
       <div class="form-group">
         <label>Dirección de mail</label>
-        <input type="email" class="form-control" id="email">
+        <input type="email" class="form-control" name="email">
       </div>
       <div class="form-group">
         <label>¿Qué modelo de Renault le interesa?</label>
-        <select class="custom-select">
+        <select class="custom-select" name="modelo[]" multiple>
           <option selected>Elija un modelo</option>
-          <option value="1">Kwid</option>
-          <option value="2">Oroch</option>
-          <option value="5">Duster</option>
-          <option value="5">Kangoo</option>
-          <option value="5">Logan</option>
-          <option value="3">Sandero</option>
-          <option value="4">Sandero Stepway</option>
+          <option value="Kwid">Kwid</option>
+          <option value="Oroch">Oroch</option>
+          <option value="Duster">Duster</option>
+          <option value="Kangoo">Kangoo</option>
+          <option value="Logan">Logan</option>
+          <option value="Sandero">Sandero</option>
+          <option value="Stepway">Sandero Stepway</option>
         </select>
       </div>
       <div class="form-group">
-        <button type="submit" class="btn btn-dark" id="enviar">Enviar</button>
+        <button type="submit" class="btn btn-dark">Enviar</button>
       </div>
     </form>
   </div>
