@@ -2,7 +2,7 @@
 
 Página web de venta de automóviles Renault.
 
-Hecha con Bootstrap, HTML5, CSS3 y JQuery.
+Hecha con Bootstrap 4, HTML5, CSS3, vanilla javascript y JQuery.
 
 Se puede ver en: http://plan-renault.netlify.com
 

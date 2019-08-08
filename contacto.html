@@ -67,14 +67,14 @@
   </div>
 <!--formulario-->
   <div class="container" id="contacto">    
-    <form name="contact-about" method="POST" data-netlify="true">
+    <form name="contacto" method="POST" data-netlify="true" action="datosok.html">
       <div class="form-group">
         <label>Nombre</label>
         <input type="text" class="form-control" name="nombre" required>
       </div>
       <div class="form-group">
         <label>Localidad</label>  
-          <select class="custom-select" name="localidad[]" multiple>
+          <select class="custom-select" name="localidad">
             <option selected>Elija su localidad</option>
             <option value="CABA">Capital Federal</option>
             <option value="GBA Norte">GBA Zona Norte</option>
@@ -117,7 +117,7 @@
       </div>
       <div class="form-group">
         <label>¿Qué modelo de Renault le interesa?</label>
-        <select class="custom-select" name="modelo[]" multiple>
+        <select class="custom-select" name="modelo">
           <option selected>Elija un modelo</option>
           <option value="Kwid">Kwid</option>
           <option value="Oroch">Oroch</option>
