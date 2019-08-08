@@ -6,13 +6,21 @@ html {
 }
 
 body{
-	margin-top: 115px;
+	margin-top: 130px;
 }
 
 label{
 	font-family: 'Open Sans', sans-serif;
 	font-size: 1rem;
 	color: #5a5a5a;
+}
+
+a {
+  color: #d2d62a;
+}
+
+a:hover{
+	color: #94971d;
 }
 
 footer{
@@ -25,6 +33,7 @@ footer{
 	font-size: 1.1rem;
 	line-height: 1.6rem;
 	border-top: 5px solid #d2d62a;
+	border-bottom: 10px solid #e9eaee;
 	padding: 0px;
 	color: #777;
 }
@@ -182,7 +191,7 @@ footer{
 		margin-top: 1.2rem;
 	}
 
-	p{
+	p, li{
 		font-size: 1rem;
 		font-family: 'Open Sans', sans-serif;
 		color: #5a5a5a;
@@ -220,7 +229,7 @@ footer{
 		color: #5a5a5a;
 	}
 
-	p{
+	p, li{
 		font-size: 1.1rem;
 		font-family: 'Open Sans', sans-serif;
 		color: #5a5a5a;
