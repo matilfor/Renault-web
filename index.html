@@ -52,41 +52,35 @@
     </div>
   </nav>
 <!--carousel-->
-<header class="d-none d-lg-block container-fluid">
+<header id=carousel-header class="d-none d-lg-block container-fluid">
   <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-      <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
-    </ol>
     <div class="carousel-inner" role="listbox">
       <div class="carousel-item active" style="background-image:url(img/desktop/kwid-header.jpg)">
         <div class="carousel-caption d-none d-md-block">
           <h3 class="carousel-h3">Renault Kwid</h3>
           <p class="carousel-p">El SUV de los compactos.</p>
-          <button class="btn btn-warning btn-lg">+ Info</button>
+          <a href="kwid.html"><button class="btn btn-warning">+ Info</button></a>
         </div>
       </div>
       <div class="carousel-item" style="background-image:url(img/desktop/kangoo-header.jpg)">
         <div class="carousel-caption d-none d-md-block">
           <h3 class="carousel-h3">Renault Kangoo</h3>
           <p class="carousel-p">Un automóvil, utilitario, familiar.</p>
-          <button class="btn btn-warning btn-lg">+ Info</button>
+          <a href="kangoo.html"><button class="btn btn-warning">+ Info</button></a>
         </div>
       </div>
       <div class="carousel-item" style="background-image:url(img/desktop/oroch-header.jpg)">
         <div class="carousel-caption d-none d-md-block">
           <h3 class="carousel-h3">Renault Oroch</h3>
           <p class="carousel-p">Una pickup diferente a todo lo que ya viste.</p>
-          <button class="btn btn-warning btn-lg">+ Info</button>
+          <a href="oroch.html"><button class="btn btn-warning">+ Info</button></a>
         </div>
       </div>
       <div class="carousel-item" style="background-image:url(img/desktop/sandero-header.jpg)">
         <div class="carousel-caption d-none d-md-block">
           <h3 class="carousel-h3">Renault Sandero Stepway</h3>
           <p class="carousel-p">Viví el momento donde quiera que estés.</p>
-          <button class="btn btn-warning btn-lg">+ Info</button>
+          <a href="stepway.html"><button class="btn btn-warning">+ Info</button></a>
         </div>
       </div>
     </div>
@@ -127,15 +121,15 @@
   </div>
 <!--formulario-->
   <div class="container" id="contacto">
-    <h1>Consultar con un Asesor Oficial Renault</h1>
+    <h1><strong>Consultar con un Asesor Oficial Renault</strong></h1>
     <p>Complete el siguiente formulario y un asesor Renault se contactará con usted para brindarle más información</p>      
     <form name="contacto" method="POST" data-netlify="true" action="datosok.html">
       <div class="form-group">
-        <label>Nombre</label>
+        <label><b>Nombre</b></label>
         <input type="text" class="form-control" name="nombre" required>
       </div>
       <div class="form-group">
-        <label>Localidad</label>  
+        <label><b>Localidad</b></label>  
           <select class="custom-select" name="localidad">
             <option selected>Elija su localidad</option>
             <option value="CABA">Capital Federal</option>
@@ -170,15 +164,15 @@
           </select>
        </div>   
       <div class="form-group">
-        <label>Teléfono (Cód. de área + tel.)</label>
+        <label><b>Teléfono (Cód. de área + tel.)</b></label>
         <input type="tel" class="form-control" name="tel" required>
       </div>
       <div class="form-group">
-        <label>Dirección de mail</label>
+        <label><b>Dirección de mail</b></label>
         <input type="email" class="form-control" name="email">
       </div>
       <div class="form-group">
-        <label>¿Qué modelo de Renault le interesa?</label>
+        <label><b>¿Qué modelo de Renault le interesa?</b></label>
         <select class="custom-select" name="modelo">
           <option selected>Elija un modelo</option>
           <option value="Kwid">Kwid</option>
@@ -198,7 +192,7 @@
 <!--fin formulario-->    
 <!--banner del footer--> 
   <footer>
-    <img class="m-auto d-block img-fluid" src="img/desktop/consultas-banner.jpg">
+    <a href="yatenes.html"><img class="m-auto d-block img-fluid" src="img/desktop/consultas-banner.jpg"></a>
   </footer>
   <a id="back-to-top" href="#" class="btn-light btn-lg" role="button"><i class="fas fa-arrow-up"></i></a>
 <!--scripts-->
