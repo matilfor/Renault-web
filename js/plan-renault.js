@@ -16,7 +16,7 @@ $(document).ready(function(){
   });
 });
 
-//pop-ups imágenes galería autos (modals)
+// //pop-ups imágenes galería autos (modals)
 let modalId = $('#image-gallery');
 
 $(document).ready(function () {
@@ -49,14 +49,13 @@ $(document).ready(function () {
         current_image = $sel.data('image-id');
         $('#image-gallery-image')
           .attr('src', $sel.data('image'));
-        // disableButtons(counter, $sel.data('image-id'));
+        	disableButtons(counter, $sel.data('image-id'));
       }
       if (setIDs == true) {
         $('[data-image-id]')
           .each(function () {
             counter++;
-            $(this)
-              .attr('data-image-id', counter);
+            $(this).attr('data-image-id', counter);
           });
       }
       $(setClickAttr)
@@ -100,3 +99,4 @@ $(document).keydown(function (e) {
     });
   }, false);
 })();
+
