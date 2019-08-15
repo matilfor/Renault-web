@@ -148,6 +148,10 @@ footer{
 	height: 100%;
 }
 
+#image-gallery .modal-footer{
+  display: block;
+}
+
 /*logos del about*/
 .img-plan{
 	float: left;
